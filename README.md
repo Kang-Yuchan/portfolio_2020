@@ -1,6 +1,6 @@
 # My Portfolio WEBSITE 2020 Ver.
 
-- HTML5 [ ]
+- HTML5 [x]
 
 - CSS3 [ ]
 
