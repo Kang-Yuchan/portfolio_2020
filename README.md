@@ -1,7 +1,7 @@
 # My Portfolio WEBSITE 2020 Ver.
 
-## HTML5
+- HTML5[ ]
 
-## CSS3
+- CSS3 [ ]
 
-## Vanilla JS
+- Vanilla JS [ ]
