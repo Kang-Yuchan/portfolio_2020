@@ -39,15 +39,17 @@
     </nav>
     <!-- Home -->
     <section id="home" class="section">
-      <img src="images/profile.jpeg" alt="profile img" class="home__avatar" />
-      <h1 class="home__title">
-        Hello, <br />
-        I'm Kang Yuchan
-      </h1>
-      <h2 class="home__description">
-        薬学専攻の留学生からエンジニアになったFrontend Developer
-      </h2>
-      <button class="home__contactBtn">CONTACT ME</button>
+      <div class="section__container">
+        <img src="images/profile.jpeg" alt="profile img" class="home__avatar" />
+        <h1 class="home__title">
+          Hello, <br />
+          I'm Kang Yuchan
+        </h1>
+        <h2 class="home__description">
+          薬学専攻の留学生からエンジニアになったFrontend Developer
+        </h2>
+        <button class="home__contactBtn">CONTACT ME</button>
+      </div>
     </section>
     <!-- About Me -->
     <section id="about" class="section section__container">
@@ -226,9 +228,8 @@
       </div>
     </section>
     <!-- My Work -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h1>My Work</h1>
+    <section id="work" class="section section__container">
+      <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn active">
@@ -244,7 +245,6 @@
           Mobile App<span class="category__count">3</span>
         </button>
       </div>
-
       <div class="work__projects">
         <a
           href="https://github.com/Kang-Yuchan/Ketflix"
@@ -363,31 +363,32 @@
           </div></a
         >
       </div>
-      </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk!</h1>
-      <h2 class="contact__email">mikuplayer123@gmail.com</h2>
-      <div class="contact__links">
-        <a
-          href="https://github.com/Kang-Yuchan"
-          target="_blank"
-          rel="”noopener”"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://twitter.com/chakotama2"
-          target="_blank"
-          rel="”noopener”"
-        >
-          <i class="fab fa-twitter-square"></i>
-        </a>
+      <div class="section__container">
+        <h1 class="contact__title">Let's talk!</h1>
+        <h2 class="contact__email">mikuplayer123@gmail.com</h2>
+        <div class="contact__links">
+          <a
+            href="https://github.com/Kang-Yuchan"
+            target="_blank"
+            rel="”noopener”"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://twitter.com/chakotama2"
+            target="_blank"
+            rel="”noopener”"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <p class="contact__rights">
+          &copy; 2020 Kang Yuchan - All rights reserved
+        </p>
       </div>
-      <p class="contact__rights">
-        &copy; 2020 Kang Yuchan - All rights reserved
-      </p>
     </section>
   </body>
 </html>

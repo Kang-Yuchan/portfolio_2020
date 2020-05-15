@@ -115,6 +115,9 @@ p {
 }
 
 .navbar__menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
@@ -166,6 +169,7 @@ p {
 
 .section__container {
   max-width: 1200px;
+  padding: 50px;
   margin: auto;
 }
 
