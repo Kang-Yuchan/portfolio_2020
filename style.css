@@ -4,8 +4,8 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
-  --color-cyan: #a4e8e0;
-  --color-dark-cyan: #4cd7d0;
+  --color-cyan: #99e2ef;
+  --color-dark-cyan: #8ce0ee;
   --color-black: #4d4d4d;
   --color-dark-grey: #616161;
   --color-light-grey: #7c7979;
@@ -48,8 +48,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -113,4 +123,32 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-cyan);
+}
+
+/* Home */
+#home {
+  background: url("images/background.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contactBtn {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
