@@ -31,10 +31,11 @@ function scrollToSection(e) {
 
 //Make Home section transparent when it is scrolled to top
 const home = document.getElementById("home");
+const homeContainer = document.querySelector(".home__container");
 const homeHeight = home.getBoundingClientRect().height;
 
 document.addEventListener("scroll", changeHomeFade);
 
 function changeHomeFade() {
-  home.style.opacity = 1 - window.scrollY / homeHeight;
+  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 }

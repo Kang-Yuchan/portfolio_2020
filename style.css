@@ -106,12 +106,12 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-cyan);
   padding: 8px;
-  z-index: 1;
 }
 
 .navbar__menu {
