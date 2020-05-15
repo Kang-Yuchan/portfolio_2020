@@ -38,7 +38,7 @@
       </div>
     </nav>
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
       <img src="images/profile.jpeg" alt="profile img" class="home__avatar" />
       <h1 class="home__title">
         Hello, <br />
@@ -50,7 +50,7 @@
       <button class="home__contactBtn">CONTACT ME</button>
     </section>
     <!-- About Me -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About Me</h1>
       <p>
         2018年の夏、薬学の大学を家庭事情の悪化によりやむを得ず中退。<br />
@@ -59,35 +59,35 @@
         2019年の春から未経験で業界に入り、現在に至るフロントエンドエンジニア。<br />
         最近はFlutterに物凄く興味ができて、リリースしたいアプリを作成中。
       </p>
-      <div class="about__major">
+      <div class="about__majors">
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-react"></i>
           </div>
-          <span class="major_title">Front-end</span>
-          <span class="major__description">
+          <h2 class="major_title">Front-end</h2>
+          <p class="major__description">
             HTML(Pug), CSS(Sass), Javascript(Typescript),
             <br />React.js, Vue.js, Web APIs
-          </span>
+          </p>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-node-js"></i>
           </div>
-          <span class="major_title">Back-end</span>
-          <span class="major__description">
+          <h2 class="major_title">Back-end</h2>
+          <p class="major__description">
             Javascript, Node.js, Ruby on Rails
             <br />REST APIs, GraphQL, MongoDB
-          </span>
+          </p>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fas fa-mobile-alt"></i>
           </div>
-          <span class="major_title">Mobile Cross Platform</span>
-          <span class="major__description">
-            Flutter, React Native
-          </span>
+          <h2 class="major_title">Mobile</h2>
+          <p class="major__description">
+            Flutter, React Native, IOS/Android
+          </p>
         </div>
       </div>
       <div class="about__career">
@@ -97,10 +97,12 @@
             alt="career logo"
             class="career__logo"
           />
-          <p class="career__name">
-            株式会社アジャイルウェア(Frontend Engineer)
-          </p>
-          <p class="career__period">2020/01 - 現在</p>
+          <div class="career__description">
+            <p class="career__name">
+              株式会社アジャイルウェア(Frontend Engineer)
+            </p>
+            <p class="career__period">2020/01 - 現在</p>
+          </div>
         </div>
         <div class="career">
           <img
@@ -108,18 +110,22 @@
             alt="career logo"
             class="career__logo"
           />
-          <p class="career__name">株式会社Glad Cube(Frontend Engineer)</p>
-          <p class="career__period">2019/05 - 09</p>
+          <div class="career__description">
+            <p class="career__name">株式会社Glad Cube(Frontend Engineer)</p>
+            <p class="career__period">2019/05 - 09</p>
+          </div>
         </div>
         <div class="career">
           <img src="images/kindai.jpg" alt="career logo" class="career__logo" />
-          <p class="career__name">近畿大学(薬学部)</p>
-          <p class="career__period">2016/03 - 2018/07</p>
+          <div class="career__description">
+            <p class="career__name">近畿大学(薬学部)</p>
+            <p class="career__period">2016/03 - 2018/07</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -219,7 +225,7 @@
       </div>
     </section>
     <!-- My Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
@@ -307,7 +313,7 @@
       </div>
     </section>
     <!-- Contact me -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk!</h1>
       <h2 class="contact__email">mikuplayer123@gmail.com</h2>
       <div class="contact__links">
