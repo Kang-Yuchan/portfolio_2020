@@ -10,10 +10,12 @@ function changeNavBgColor() {
     : navbar.classList.remove("navbar--dark");
 }
 
-//Handle scrolling when tapping on the navbar menu
+//Handle scrolling when tapping on the navbar menu and contact me button
 const navbarMenu = document.querySelector(".navbar__menu");
+const contactBtn = document.querySelector(".home__contactBtn");
 
 navbarMenu.addEventListener("click", scrollToSection);
+contactBtn.addEventListener("click", scrollToSection);
 
 function scrollToSection(e) {
   const target = e.target;
