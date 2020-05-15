@@ -2,6 +2,6 @@
 
 - [x] HTML5
 
-- [ ] CSS3
+- [x] CSS3(Responsive)
 
 - [ ] Vanilla JS
