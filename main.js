@@ -62,9 +62,33 @@ function scrollToTop() {
 }
 
 //Filltering works when tapping on the button
-const fillterBtns = document.querySelector(".work__categories");
-const works = document.querySelector(".work__projects");
+const workBtnContainer = document.querySelector(".work__categories");
+const projectsContainer = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project");
 
-fillterBtns.addEventListener("click", (e) => {
-  console.log(e);
-});
+workBtnContainer.addEventListener("click", filterProjects);
+
+function filterProjects(e) {
+  const workBtnData = e.target.dataset.filter;
+  const parentNodeData = e.target.parentNode.dataset.filter;
+
+  projectsContainer.classList.add("animation--out");
+  setTimeout(() => {
+    projects.forEach((i) => {
+      if (parentNodeData) {
+        if (parentNodeData !== "*" && i.dataset.type !== parentNodeData) {
+          i.classList.add("project--invisible");
+        } else {
+          i.classList.remove("project--invisible");
+        }
+      } else {
+        if (workBtnData !== "*" && i.dataset.type !== workBtnData) {
+          i.classList.add("project--invisible");
+        } else {
+          i.classList.remove("project--invisible");
+        }
+      }
+    });
+    projectsContainer.classList.remove("animation--out");
+  }, 300);
+}

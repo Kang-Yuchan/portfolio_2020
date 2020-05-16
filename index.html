@@ -251,25 +251,26 @@
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn active">
+        <button class="category__btn active" data-filter="*">
           All<span class="category__count">8</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="services">
           Services<span class="category__count">2</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="web">
           Web App<span class="category__count">3</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="mobile">
           Mobile App<span class="category__count">3</span>
         </button>
       </div>
       <div class="work__projects">
         <a
           href="https://github.com/Kang-Yuchan/Ketflix"
-          class="project web-app"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="web"
           ><img
             src="images/projects/ketflix.png"
             alt="ketflix"
@@ -282,9 +283,10 @@
         </a>
         <a
           href="https://github.com/Kang-Yuchan/Mementom"
-          class="project web-app"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="web"
           ><img
             src="images/projects/mementom.png"
             alt="mementom"
@@ -297,9 +299,10 @@
         </a>
         <a
           href="https://github.com/Kang-Yuchan/Painting"
-          class="project web-app"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="web"
           ><img
             src="images/projects/paint.png"
             alt="paint"
@@ -312,9 +315,10 @@
         </a>
         <a
           href="https://github.com/Kang-Yuchan/Redux-Practice"
-          class="project mobile-app"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="mobile"
           ><img
             src="images/projects/timer.png"
             alt="timer"
@@ -325,7 +329,11 @@
             <span>Timer App with React Native</span>
           </div>
         </a>
-        <a href="https://sitest.jp/" class="project services" target="_blank"
+        <a
+          href="https://sitest.jp/"
+          class="project"
+          target="_blank"
+          data-type="services"
           ><img
             src="images/projects/sitest.jpg"
             alt="sitest"
@@ -338,9 +346,10 @@
         </a>
         <a
           href="https://lychee-redmine.jp/"
-          class="project services"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="services"
           ><img
             src="images/projects/lychee.jpg"
             alt="lychee"
@@ -353,9 +362,10 @@
         </a>
         <a
           href="https://github.com/Kang-Yuchan/https://github.com/Kang-Yuchan/RN-Todo"
-          class="project mobile-app"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="mobile"
           ><img
             src="images/projects/todo.png"
             alt="todo"
@@ -368,9 +378,10 @@
         >
         <a
           href="https://github.com/Kang-Yuchan/react-native-practice"
-          class="project mobile-app"
+          class="project"
           target="_blank"
           rel="”noopener”"
+          data-type="mobile"
           ><img
             src="images/projects/weather.png"
             alt="weather"
