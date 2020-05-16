@@ -168,7 +168,7 @@ p {
 .navbar__toggle-btn {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 13px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
@@ -176,7 +176,8 @@ p {
 }
 
 .navbar__toggle-btn.navToggle--margin {
-  top: 13px;
+  top: 6px;
+  right: 10px;
 }
 
 /* Home */
