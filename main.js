@@ -39,3 +39,19 @@ document.addEventListener("scroll", changeHomeFade);
 function changeHomeFade() {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 }
+
+//Arrow up button
+const arrowup = document.querySelector(".arrowupBtn");
+
+document.addEventListener("scroll", displayBtn);
+document.addEventListener("click", scrollToTop);
+
+function displayBtn() {
+  window.scrollY > homeHeight / 2
+    ? arrowup.classList.add("displayBtn")
+    : arrowup.classList.remove("displayBtn");
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
