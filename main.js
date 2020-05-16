@@ -16,7 +16,7 @@ function changeNavBgColor() {
 }
 
 //Handle scrolling when tapping on the navbar menu and contact me button
-const navbarMenu = document.querySelector(".navbar__menu");
+const navbarMenu = document.querySelector(".navbar__menu__items");
 const contactBtn = document.querySelector(".home__contactBtn");
 
 navbarMenu.addEventListener("click", scrollToSection);
@@ -32,6 +32,13 @@ function scrollToSection(e) {
       behavior: "smooth",
     });
   }
+}
+
+//Navbar toggle button for small screen
+navbarToggle.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  navbarMenu.classList.toggle("open");
 }
 
 //Make Home section transparent when it is scrolled to top

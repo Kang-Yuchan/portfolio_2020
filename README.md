@@ -4,4 +4,4 @@
 
 - [x] CSS3(Responsive)
 
-- [ ] Vanilla JS
+- [x] Vanilla JS
