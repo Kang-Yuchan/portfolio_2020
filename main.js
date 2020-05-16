@@ -91,4 +91,10 @@ function filterProjects(e) {
     });
     projectsContainer.classList.remove("animation--out");
   }, 300);
+
+  //Remove selection from the previous item and select the new item
+  const selected = document.querySelector(".selected");
+  const selectItem = e.target;
+  selected.classList.remove("selected");
+  selectItem.classList.add("selected");
 }
