@@ -78,14 +78,15 @@ function filterProjects(e) {
   projectsContainer.classList.add("animation--out");
   setTimeout(() => {
     projects.forEach((i) => {
+      const type = i.dataset.type;
       if (parentNodeData) {
-        if (parentNodeData !== "*" && i.dataset.type !== parentNodeData) {
+        if (parentNodeData !== "*" && type !== parentNodeData) {
           i.classList.add("project--invisible");
         } else {
           i.classList.remove("project--invisible");
         }
       } else {
-        if (workBtnData !== "*" && i.dataset.type !== workBtnData) {
+        if (workBtnData !== "*" && type !== workBtnData) {
           i.classList.add("project--invisible");
         } else {
           i.classList.remove("project--invisible");
@@ -107,12 +108,19 @@ function filterProjects(e) {
 //Change count dynamically depend on items
 const allCount = document.querySelectorAll(".category__count");
 projects.forEach((i) => {
-  if (i.dataset.type === "services") {
-    servicesArr.push(i);
-  } else if (i.dataset.type === "web") {
-    webArr.push(i);
-  } else if (i.dataset.type === "mobile") {
-    mobileArr.push(i);
+  const type = i.dataset.type;
+  switch (type) {
+    case "services":
+      servicesArr.push(i);
+      break;
+    case "web":
+      webArr.push(i);
+      break;
+    case "mobile":
+      mobileArr.push(i);
+      break;
+    default:
+      return;
   }
 });
 allCount[0].innerHTML = projects.length;
