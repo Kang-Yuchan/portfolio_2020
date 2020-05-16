@@ -49,7 +49,7 @@ function changeHomeFade() {
 const arrowup = document.querySelector(".arrowupBtn");
 
 document.addEventListener("scroll", displayBtn);
-document.addEventListener("click", scrollToTop);
+arrowup.addEventListener("click", scrollToTop);
 
 function displayBtn() {
   window.scrollY > homeHeight / 2
@@ -60,3 +60,11 @@ function displayBtn() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+//Filltering works when tapping on the button
+const fillterBtns = document.querySelector(".work__categories");
+const works = document.querySelector(".work__projects");
+
+fillterBtns.addEventListener("click", (e) => {
+  console.log(e);
+});
