@@ -65,6 +65,9 @@ function scrollToTop() {
 const workBtnContainer = document.querySelector(".work__categories");
 const projectsContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
+const servicesArr = [];
+const webArr = [];
+const mobileArr = [];
 
 workBtnContainer.addEventListener("click", filterProjects);
 
@@ -95,6 +98,24 @@ function filterProjects(e) {
   //Remove selection from the previous item and select the new item
   const selected = document.querySelector(".selected");
   const selectItem = e.target;
-  selected.classList.remove("selected");
+  if (selected != null) {
+    selected.classList.remove("selected");
+  }
   selectItem.classList.add("selected");
 }
+
+//Change count dynamically depend on items
+const allCount = document.querySelectorAll(".category__count");
+projects.forEach((i) => {
+  if (i.dataset.type === "services") {
+    servicesArr.push(i);
+  } else if (i.dataset.type === "web") {
+    webArr.push(i);
+  } else if (i.dataset.type === "mobile") {
+    mobileArr.push(i);
+  }
+});
+allCount[0].innerHTML = projects.length;
+allCount[1].innerHTML = servicesArr.length;
+allCount[2].innerHTML = webArr.length;
+allCount[3].innerHTML = mobileArr.length;
