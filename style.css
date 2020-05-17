@@ -391,9 +391,10 @@ p {
 }
 
 .work__projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   opacity: 1;
   transition: all var(--animation-duration) ease-in;
 }
@@ -574,6 +575,11 @@ p {
     width: 250px;
   }
 
+  .work__projects {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+  }
+
   .category__btn {
     margin: 10px;
   }
@@ -583,10 +589,6 @@ p {
   }
 
   .arrowupBtn {
-    line-height: 35px;
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
     bottom: 10px;
     right: 10px;
   }
