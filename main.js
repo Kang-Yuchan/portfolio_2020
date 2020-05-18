@@ -72,7 +72,6 @@ function scrollToTop() {
 const workBtnContainer = document.querySelector(".work__categories");
 const projectsContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
-const servicesArr = [];
 const webArr = [];
 const mobileArr = [];
 
@@ -92,6 +91,8 @@ function filterProjects(e) {
         } else {
           i.classList.remove("project--invisible");
         }
+      } else if (workBtnData === undefined) {
+        return;
       } else {
         if (workBtnData !== "*" && type !== workBtnData) {
           i.classList.add("project--invisible");
@@ -117,9 +118,6 @@ const allCount = document.querySelectorAll(".category__count");
 projects.forEach((i) => {
   const type = i.dataset.type;
   switch (type) {
-    case "services":
-      servicesArr.push(i);
-      break;
     case "web":
       webArr.push(i);
       break;
@@ -131,6 +129,5 @@ projects.forEach((i) => {
   }
 });
 allCount[0].innerHTML = projects.length;
-allCount[1].innerHTML = servicesArr.length;
-allCount[2].innerHTML = webArr.length;
-allCount[3].innerHTML = mobileArr.length;
+allCount[1].innerHTML = webArr.length;
+allCount[2].innerHTML = mobileArr.length;
